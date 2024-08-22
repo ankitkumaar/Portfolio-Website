@@ -10,7 +10,7 @@ body {
     height: 100vh;
     color: #333;
     font-family: "Poppins", sans-serif;
-    background-image: url('/assets/background-2.png');
+    background: url('/assets/background-2.png');
 }
 :root {
     --primary-color: white;
