@@ -1,15 +1,3 @@
-// right click disabled
-var message = "Access denied! No copying allowed!";
-function rtclickcheck(keyp) { 
-    if (navigator.appName == "Netscape" && keyp.which == 3) { 
-        alert(message); return false; 
-    }
-    if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 
-        alert(message); return false; 
-    } 
-}
-document.onmousedown = rtclickcheck;
-
 // contact me - form data to excel sheet
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyqX_olSFGLzbgKb0ubgR5hXb2r_pOkYemXsJAYmzmAy5MgE3RruwMRpnvLKfkjw1uK/exec';
 const form = document.forms['Portfolio-contact-form'];
