@@ -1,3 +1,42 @@
+document.addEventListener('keydown', function(event) {
+  // Disable F12 key
+  if (event.keyCode === 123) {
+      event.preventDefault();
+      return false;
+  }
+
+  // Disable Ctrl+U
+  if (event.ctrlKey && event.keyCode === 85) {
+      event.preventDefault();
+      return false;
+  }
+
+  // Disable Ctrl+Shift+I (Inspect)
+  if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+      event.preventDefault();
+      return false;
+  }
+
+  // Disable Ctrl+Shift+J (Console)
+  if (event.ctrlKey && event.shiftKey && event.keyCode === 74) {
+      event.preventDefault();
+      return false;
+  }
+
+  // Disable Ctrl+Shift+C (Element Picker)
+  if (event.ctrlKey && event.shiftKey && event.keyCode === 67) {
+      event.preventDefault();
+      return false;
+  }
+
+  // Disable Ctrl+S (Save)
+  if (event.ctrlKey && event.keyCode === 83) {
+      event.preventDefault();
+      return false;
+  }
+});
+
+
 // contact me - form data to excel sheet
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyqX_olSFGLzbgKb0ubgR5hXb2r_pOkYemXsJAYmzmAy5MgE3RruwMRpnvLKfkjw1uK/exec';
 const form = document.forms['Portfolio-contact-form'];
