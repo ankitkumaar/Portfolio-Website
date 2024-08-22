@@ -83,7 +83,7 @@ section {
     margin-right: 8rem;
     box-sizing: border-box;
     min-height: fit-content;
-    background: url('/assets/background-2.png');
+    background-image: url('/assets/background-2.png');
 }
 
 /* home section */
@@ -91,7 +91,6 @@ section {
     margin-bottom: 2rem;
     height: 90vh;
     position: relative;
-    background: url('/assets/background-1.png');
 }
 .home-section {
     margin-top: 5rem;
