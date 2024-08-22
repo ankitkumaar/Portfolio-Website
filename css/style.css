@@ -22,9 +22,6 @@
 .dark-theme {
     background: #1f1f1f;
 }
-body {
-    background: url('../assets/background-2.png');
-}
 
 /* header section */
 header {
@@ -86,6 +83,7 @@ section {
     margin-right: 8rem;
     box-sizing: border-box;
     min-height: fit-content;
+    background: url('../assets/background-2.png');
 }
 
 /* home section */
