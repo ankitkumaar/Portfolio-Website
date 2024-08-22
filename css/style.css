@@ -23,7 +23,7 @@
     background: #1f1f1f;
 }
 body {
-    background: url('/assets/background-2.png');
+    background: url('../assets/background-2.png');
 }
 
 /* header section */
