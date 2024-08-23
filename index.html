@@ -9,6 +9,7 @@
     <!-- css file -->
     <link rel="shortcut icon" type="image/x-icon" href="./assets/logo-icon.png" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
 </head>
 
 <body oncontextmenu="return false">
@@ -29,6 +30,33 @@
                 
                 <img src="./assets/moon.png" alt="moon icon" id="moon-icon">
             </ul>
+        </div>
+    </header>
+
+    <header id="hamburger-header">
+        <a href="#home" class="portfolio-logo"><h1>Ankit Kumaar</h1></a>
+        
+        <!-- header menu -->
+        <div class="hamburger-menu">
+
+            <div class="hamburger-icons-moon">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/moon.png" alt="moon icon" id="moon-icon">
+            </div>
+            
+            <div class="hamburger-menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./404.html" onclick="toggleMenu()">Blogs</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
     </header>
 
@@ -114,7 +142,6 @@
                             src="./assets/youtube.png" 
                             alt="youtube profile" class="home-icon" 
                             onclick="window.open('https://youtube.com')">
-                            
                     </div>
                 </div>
             </div>
@@ -207,7 +234,7 @@
                             <li>JavaScript</li>
                         </ul>
                         <br>
-                        <h3>Familier with :</h3>
+                        <h3>Familiar with :</h3>
                         <ul>
                             <li>Linux</li>
                             <li>Python</li>
@@ -221,7 +248,7 @@
                             <li>MongoDB</li>
                         </ul>
                         <br>
-                        <h3>Familier with :</h3>
+                        <h3>Familiar with :</h3>
                         <ul>
                             <li>SQL</li>
                             <li>Git/GitHub</li>
@@ -309,7 +336,7 @@
     <!-- project-page section -->
      <section id="project">
         <h1 class="project-title">Projects</h1>
-        <p class="project-p1">Explore Personal & Collaborative Projects, Developed & designed with Live working and Github repo.</p>
+        <p class="project-p1">Explore Personal & Collaborative Projects, Developed & designed with Live working and Github repository</p>
 
         <div class="project-section">
             <div class="project-section-container">
@@ -526,7 +553,7 @@
 
     <!-- footer section -->
      <footer>
-        <p>Copyright &#169; 2024 Ankit Kumaar. All rights Reserved. Made with <span style="color: red;">&hearts;</span></p>
+        <p>Copyright &#169; 2024 Ankit Kumaar. All rights Reserved. Made with <span style="color: red;">&hearts; </span>by Ankit</p>
      </footer>
 
      <!-- JavaScript file -->
