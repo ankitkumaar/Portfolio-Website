@@ -53,7 +53,8 @@
   }
   .hamburger-logo {
     color: black;
-    font-size: 11px;
+    font-size: 14px;
+    margin-left: -1rem;
   }
   .hamburger-menu {
     margin-left: 7.2rem;
