@@ -48,17 +48,72 @@
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    justify-content: left;
+  }
+  .hamburger-logo {
+    color: black;
+    font-size: 14px;
+  }
+  .hamburger-menu {
+    margin-left: 7.2rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    height: 100%;
+    margin: 0 1.4rem;
+  }
   #home {
     height: 100%;
     margin-bottom: 5rem;
   }
-  #home .home-section {
+  .home-section {
     display: block;
   }
-  #about {
-    height: 100%;
+  .home-p1 {
+    width: 24.4rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+  }
+  .home-animated {
+    display: block;
+  }
+  .home-title {
+    font-size: 2.32rem;
+  }
+  .home-animated-info {
+    margin-left: 12px;
+    margin-top: -0.1rem;
+    margin-bottom: 4.6rem;
+  }
+  .home-animated-item {
+    font-size: 2.8rem;
+  }
+  .home-p2 {
+    width: 24.4rem;
+    text-align: justify;
+  }
+  .home-btn-container {
+    width: 25.4rem;
+  }
+  .home-social-container {
+    margin-left: 2.2rem;
+    transform: scale(1.1);
+  }
+  .home-icon {
+    height: 1.25rem;
+    margin-left: -0.28rem;
+  }
+  .home-profile-pic {
+    margin-left: 1.4rem;
+  }
+  .about-title {
+    width: 24.4rem;
   }
   .about-p1 {
+    width: 24.4rem;
     text-decoration: underline;
   }
   .about-section {
@@ -66,14 +121,14 @@
     display: block;
   }
   .about-profile-pic {
-    margin-left: 7rem;
+    margin-left: 7.5rem;
   }
   .about-text {
-    width: 24.6rem;
+    width: 24.4rem;
   }
   .about-details {
+    width: 25.4rem;
     display: block;
-    width: 26rem;
   }
   .about-details-container {
     margin-bottom: 2rem;
@@ -81,21 +136,22 @@
   .arrow-icon {
     display: none;
   }
-  #skill {
-    height: 100%;
+  .skill-title {
+    width: 24.4rem;
   }
   .skill-p1 {
+    width: 24.4rem;
     text-decoration: underline;
   }
   .skill-section {
     display: block;
   }
   .skill-text {
-    width: 24rem;
+    width: 24.4rem;
   }
   .skill-details-container {
+    width: 25.8rem;
     display: block;
-    width: 26rem;
   }
   .skill-category {
     margin-bottom: 2rem;
@@ -105,10 +161,13 @@
     margin-left: 3rem;
   }
   #experience {
-    height: 100%;
     margin-bottom: 2rem;
   }
+  .experience-title {
+    width: 24.4rem;
+  }
   .experience-p1 {
+    width: 24.4rem;
     text-decoration: underline;
   }
   .experience-section { 
@@ -119,26 +178,28 @@
     display: block;
   }
   .experience-text {
-    width: 24.6rem;
+    width: 24.4rem;
   }
   .experience-profile-pic {
-    margin-left: 7rem;
+    margin-left: 7.5rem;
   }
   .experience-details {
     display: block;
-    width: 26rem;
+    width: 25.4rem;
   }
   .experience-details-container {
     margin-bottom: 2rem;
   }
-  #project {
-    height: 100%;
+  .project-title {
+    width: 24.4rem;
   }
   .project-p1 {
+    width: 24.4rem;
     text-decoration: underline;
   }
   .project-section {
     margin-top: 5rem;
+    margin-left: -1rem;
     display: block;
   }
   .project-section-container {
@@ -149,10 +210,13 @@
     width: 23.5rem;
   }
   #contact {
-    height: 100%;
     margin-bottom: 5rem;
   }
+  .contact-title {
+    width: 24.4rem;
+  }
   .contact-p1 {
+    width: 24.4rem;
     text-decoration: underline;
   }
   .contact-section {
@@ -160,25 +224,26 @@
     display: block;
   }
   .contact-profile-pic {
-    margin-left: 3.5rem;
+    margin-left: 2.8rem;
   }
   .contact-section-container {
-    margin-top: 2.8rem;
+    margin-top: 5rem;
+    margin-left: -0.5rem;
   }
   .form-control:not(textarea) {
     height: 48px;
-    width: 385px;
+    width: 382px;
   }
   .form-control:not(input) {
     height: 150px;
-    width: 385px;
+    width: 382px;
   }
   .contact-btn-container {
-    margin-left: 12.3rem;
+    margin-left: 12.2rem;
   }
   footer {
-    width: 26rem;
-    margin-left: 5rem;
+    width: 24.4rem;
+    margin-left: 1rem;
   }
 }
 
