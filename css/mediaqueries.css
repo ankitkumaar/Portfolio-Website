@@ -57,7 +57,7 @@
   .hamburger-logo {
     color: black;
     font-size: 14px;
-    margin-left: -2rem;
+    margin-left: -3rem;
   }
   .hamburger-logo:hover {
     cursor: pointer;
@@ -67,7 +67,6 @@
   }
   body {
     overflow-x: hidden;
-    position: absolute;
   }
   section {
     height: 100%;
