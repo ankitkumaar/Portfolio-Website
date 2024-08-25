@@ -77,3 +77,20 @@ body {
     transform: translateY(-10px);
     box-shadow: 20px 20px 30px #babecc, -4px -4px 30px #ffffff;
 }
+
+/* media-queries */
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    .error-section {
+        display: block;
+    }
+    .error-section-container {
+        height: 100%;
+        width: 20rem;
+    }
+    .error-code {
+        margin-left: 0.5rem;
+    }
+}

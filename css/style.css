@@ -717,3 +717,379 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* media-queries */
+/* @media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}  */
+
+/* @media screen and (max-width: 1200px) {
+    #portfolio-header {
+      display: none;
+    }
+    #hamburger-header  {
+      display: flex;
+    }
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+    .about-containers {
+      margin-top: 0;
+    }
+  } */
+  
+  @media screen and (max-width: 600px) {
+    #portfolio-header {
+        display: none;
+    }
+    header {
+      justify-content: left;
+    }
+    #hamburger-header  {
+        display: flex;
+    }
+    .hamburger-logo {
+      color: black;
+      font-size: 14px;
+      margin-left: -3rem;
+    }
+    .hamburger-logo:hover {
+      cursor: pointer;
+    }
+    .hamburger-menu {
+      margin-left: 8rem;
+    }
+    body {
+      overflow-x: hidden;
+    }
+    section {
+      height: 100%;
+      margin: 0 1.4rem;
+    }
+    #home {
+      height: 100%;
+      margin-bottom: 4rem;
+    }
+    .home-section {
+      display: block;
+    }
+    .home-profile-pic-phone {
+      display: flex;
+      margin-top: -4.5rem;
+      margin-left: 0.8rem;
+    }
+    .home-profile-phone {
+      transform: scale(1);
+      transition: all 300ms ease;
+    }
+    .home-profile-phone:hover {
+      cursor: pointer;
+      transform: scale(1.04);
+    }
+    .home-p1 {
+      width: 24.4rem;
+      text-decoration: underline;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .home-animated {
+      display: block;
+    }
+    .home-title {
+      font-size: 2.32rem;
+    }
+    .home-animated-info {
+      margin-left: 12px;
+      margin-top: -0.1rem;
+      margin-bottom: 4.6rem;
+    }
+    .home-animated-item {
+      font-size: 2.8rem;
+    }
+    .home-p2 {
+      width: 24.4rem;
+      text-align: justify;
+    }
+    .home-btn-container {
+      width: 25.4rem;
+    }
+    .home-social-container {
+      margin-left: 2.2rem;
+      transform: scale(1.1);
+    }
+    .home-icon {
+      height: 1.25rem;
+      margin-left: -0.28rem;
+    }
+    .home-profile-pic {
+      display: none;
+    }
+    #about {
+      padding-top: 7.5vh;
+    }
+    .about-title {
+      margin-top: -5rem;
+      width: 24.4rem;
+    }
+    .about-p1 {
+      width: 24.4rem;
+      text-decoration: underline;
+    }
+    .about-section {
+      margin-top: 5rem;
+      display: block;
+    }
+    .about-profile-pic {
+      margin-left: 7.5rem;
+    }
+    .about-text {
+      margin-top: -1rem;
+      width: 24.4rem;
+    }
+    .about-details {
+      width: 25.4rem;
+      display: block;
+    }
+    .about-details-container {
+      margin-bottom: 2rem;
+    }
+    .arrow-icon {
+      display: none;
+    }
+    #skill {
+      padding-top: 5vh;
+    }
+    .skill-title {
+      margin-top: -4rem;
+      width: 24.4rem;
+    }
+    .skill-p1 {
+      width: 24.4rem;
+      text-decoration: underline;
+    }
+    .skill-section {
+      display: block;
+    }
+    .skill-profile-pic-phone {
+      display: flex;
+      margin-top: 4.5rem;
+      margin-left: 3rem;
+    }
+    .skill-profile-phone {
+      border-radius: 2rem;
+      transform: scale(1.2);
+      transition: all 300ms ease;
+    }
+    .skill-profile-phone:hover {
+      cursor: pointer;
+      transform: scale(1.24);
+    }
+    .skill-text {
+      margin-top: 2rem;
+      width: 24.4rem;
+    }
+    .skill-details-container {
+      width: 25.8rem;
+      display: block;
+    }
+    .skill-category {
+      margin-bottom: 2rem;
+    }
+    .skill-profile-pic {
+      display: none;
+    }
+    #experience {
+      padding-top: 0vh;
+    }
+    .experience-title {
+      margin-top: 2.5rem;
+      width: 24.4rem;
+    }
+    .experience-p1 {
+      width: 24.4rem;
+      text-decoration: underline;
+    }
+    .experience-section { 
+      margin-top: 7rem;
+      display: block;
+    }
+    .experience-section-container {
+      display: block;
+    }
+    .experience-text {
+      margin-top: -1.5rem;
+      width: 24.4rem;
+    }
+    .experience-profile-pic {
+      margin-top: -2.6rem;
+      margin-left: 7.5rem;
+    }
+    .experience-details {
+      display: block;
+      width: 25.4rem;
+    }
+    .experience-details-container {
+      margin-bottom: 2rem;
+    }
+    #project {
+      padding-top: 0vh;
+    }
+    .project-title {
+      margin-top: 2rem;
+      width: 24.4rem;
+    }
+    .project-p1 {
+      width: 24.4rem;
+      text-decoration: underline;
+    }
+    .project-section {
+      margin-top: 5rem;
+      margin-left: -1rem;
+      display: block;
+    }
+    .project-profile-pic-phone {
+      display: flex;
+      margin-top: -1.2rem;
+      margin-left: 4.6rem;
+      margin-bottom: 4.5rem;
+    }
+    .project-profile-phone {
+      border-radius: 2rem;
+      transform: scale(1.2);
+      transition: all 300ms ease;
+    }
+    .project-profile-phone:hover {
+      cursor: pointer;
+      transform: scale(1.24);
+    }
+    .project-section-container {
+      display: block;
+    }
+    .project-details-container {
+      margin-top: 2rem;
+      width: 23.5rem;
+    }
+    #contact {
+      padding-top: 5.2vh;
+      margin-bottom: 5rem;
+    }
+    .contact-title {
+      margin-top: -4rem;
+      width: 24.4rem;
+    }
+    .contact-p1 {
+      width: 24.4rem;
+      text-decoration: underline;
+    }
+    .contact-section {
+      margin-top: 4.6rem;
+      display: block;
+    }
+    .contact-profile-pic {
+      margin-left: 2.8rem;
+    }
+    .contact-section-container {
+      margin-top: 2.8rem;
+      margin-left: -0.5rem;
+    }
+    .form-control:not(textarea) {
+      height: 48px;
+      width: 382px;
+    }
+    .form-control:not(input) {
+      height: 150px;
+      width: 382px;
+    }
+    .contact-btn-container {
+      margin-left: 12.2rem;
+    }
+    footer {
+      width: 24.4rem;
+      margin-left: 1rem;
+    }
+  }
+  
+  /* @media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 40vh;
+    }
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+  } */
