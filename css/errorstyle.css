@@ -87,6 +87,7 @@ body {
         display: block;
     }
     .error-section-container {
+        margin-top: -2rem;
         height: 100%;
         width: 20rem;
     }
