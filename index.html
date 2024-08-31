@@ -9,7 +9,6 @@
     <!-- css file -->
     <link rel="shortcut icon" type="image/x-icon" href="./assets/logo-icon.png" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mediaqueries.css">
 </head>
 
 <body oncontextmenu="return false">
@@ -28,7 +27,14 @@
                 <li><a href="./404.html">Blogs</a></li>
                 <li><a href="#contact">Contact</a></li>
                 
-                <img src="./assets/moon.png" alt="moon icon" id="moon-icon">
+                <!-- toggle-switch -->
+                <div class="toggle-switch">
+                    <input type="checkbox" id="theme-toggle" class="toggle-input">
+                    <label for="theme-toggle" class="toggle-label">
+                        <div class="toggle-dot"></div>
+                    </label>
+                </div>
+                
             </ul>
         </div>
     </header>
@@ -45,7 +51,14 @@
                     <span></span>
                     <span></span>
                 </div>
-                <img src="./assets/moon.png" alt="moon icon" id="moon-icon">
+
+                <!-- toggle-switch -->
+                <div class="toggle-switch-phone" for="theme-toggle">
+                    <label class="toggle-label-phone">
+                        <input type="checkbox" id="theme-toggle" class="toggle-input-phone">
+                        <div class="toggle-dot-phone"></div>
+                    </label>
+                </div>
             </div>
             
             <div class="hamburger-menu-links">
@@ -577,7 +590,7 @@
 
     <!-- footer section -->
      <footer>
-        <p>Copyright &#169; 2024 Ankit. All rights Reserved. Crafted with <span style="color: red;">&hearts; </span>by Kumaar</p>
+        <p>Copyright &#169; 2024 Ankit Kumaar. All rights Reserved. Designed with <span style="color: red;">&hearts; </span></p>
      </footer>
 
      <!-- JavaScript file -->

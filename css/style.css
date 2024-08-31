@@ -19,9 +19,6 @@
     --fifth-color: #353535;
     --sixth-color: #d7dcfd;
 }
-.dark-theme {
-    background: #1f1f1f;
-}
 
 body {
     background: url('../assets/background-2.png');
@@ -72,10 +69,40 @@ header.shadow {
     text-underline-offset: 0.8rem;
     text-decoration-color: #8291e6;
 }
-#moon-icon {
-    margin-left: 1rem;
-    width: 27px;
-    cursor: pointer;
+.toggle-switch {
+  margin: 2px 14px;
+  position: relative;
+  width: 56px;
+  height: 25px;
+  background-color: #4b5563;
+  border-radius: 10rem;
+}
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.toggle-dot {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 20px;
+  height: 16px;
+  background-color: white;
+  border-radius: 10rem;
+  transition: transform 300ms ease;
+}
+.toggle-input:checked + .toggle-label .toggle-dot {
+  transform: translateX(24px);
+}
+body.dark-mode {
+
 }
 
 /* hamburger-header section */
@@ -92,9 +119,10 @@ header.shadow {
 .hamburger-icon {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 22px;
     width: 30px;
+    margin-top: 8px;
     cursor: pointer;
 }
 .hamburger-icon span {
@@ -103,44 +131,14 @@ header.shadow {
     background-color: black;
     transition: all 300ms ease-in-out;
 }
-.hamburger-menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-}
-.hamburger-menu-links a {
-    display: block;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
-    transition: all 300ms ease-in-out;
-}
-.hamburger-menu-links li {
-    list-style: none;
-}
-.hamburger-menu-links.open {
-    margin-top: 0.7rem;
-    max-height: 300px;
-    width: 160px;
-    border-radius: 0.5rem;
-    box-shadow: -3px -3px 10px #ffffff73,
-                  2px 2px 10px rgba(94, 104, 121, 0.288);
-}
 .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
+    transform: rotate(45deg) translate(8px, 2px);
 }
 .hamburger-icon.open span:nth-child(2) {
     opacity: 0;
 }
 .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
+    transform: rotate(-45deg) translate(8px, -2px);
 }
 .hamburger-icon span:first-child {
     transform: none;
@@ -150,6 +148,71 @@ header.shadow {
 }
 .hamburger-icon span:first-child {
     transform: none;
+}
+.hamburger-menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+.hamburger-menu-links a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+.hamburger-menu-links li {
+  list-style: none;
+}
+.hamburger-menu-links.open {
+  margin-top: 0.7rem;
+  max-height: 300px;
+  width: 160px;
+  border-radius: 0.5rem;
+  box-shadow: -3px -3px 10px #ffffff73,
+                2px 2px 10px rgba(94, 104, 121, 0.288);
+}
+.toggle-switch-phone {
+  margin: 9px 16px;
+  position: relative;
+  width: 45px;
+  height: 20px;
+  background-color: #4b5563;
+  border-radius: 10rem;
+}
+.toggle-input-phone {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-label-phone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.toggle-dot-phone {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 16px;
+  height: 12px;
+  background-color: white;
+  border-radius: 10rem;
+  transition: transform 300ms ease;
+}
+.toggle-input-phone:checked + .toggle-dot-phone {
+  transform: translateX(18px);
+}
+body.dark-mode {
+
 }
 
 /* section */
@@ -787,7 +850,7 @@ footer p {
       cursor: pointer;
     }
     .hamburger-menu {
-      margin-left: 8rem;
+      margin-left: 4rem;
     }
     body {
       overflow-x: hidden;

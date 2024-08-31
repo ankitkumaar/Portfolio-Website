@@ -57,17 +57,10 @@ function reloadPage() {
 }
 
 /* dark-theme code :
-var icon = document.getElementById("moon-icon");
-icon.onclick = function() {
-  document.body.classList.toggle("dark-theme");
+document.getElementById('theme-toggle').addEventListener('change', function() {
+document.body.classList.toggle('dark-mode', this.checked);
+}); */
 
-  if(document.body.classList.contains("dark-theme")) {
-    icon.src = "Assets/sun.png";
-  } else {
-    icon.src = "Assets/moon.png";
-  }
-}
-*/
 
 // Toggle-menu code
 function toggleMenu() {
