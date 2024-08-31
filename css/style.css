@@ -831,7 +831,7 @@ footer p {
     }
   } */
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     #portfolio-header {
         display: none;
     }
@@ -850,9 +850,10 @@ footer p {
       cursor: pointer;
     }
     .hamburger-menu {
-      margin-left: 4rem;
+      margin-left: 7rem;
     }
     body {
+      width: 445px;
       overflow-x: hidden;
     }
     section {
