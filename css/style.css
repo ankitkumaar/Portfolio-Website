@@ -350,7 +350,7 @@ section {
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid var(--third-color);
-    -webkit-filter: drop-shadow(2px 1px 10px white);
+    -webkit-filter: drop-shadow(2px 1px 4px white);
 }
 .home-btn:hover {
     cursor: pointer;
@@ -452,7 +452,7 @@ section {
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid var(--third-color);
-    -webkit-filter: drop-shadow(2px 1px 10px white);
+    -webkit-filter: drop-shadow(2px 1px 4px white);
 }
 .about-details-container:hover {
     transform: translateY(-10px);
@@ -522,7 +522,7 @@ section {
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid var(--third-color);
-    -webkit-filter: drop-shadow(2px 1px 10px white);
+    -webkit-filter: drop-shadow(2px 1px 4px white);
 }
 .skill-category:hover {
     transform: translateY(-10px);
@@ -613,7 +613,7 @@ section {
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid var(--third-color);
-    -webkit-filter: drop-shadow(2px 1px 10px white);
+    -webkit-filter: drop-shadow(2px 1px 4px white);
 }
 .experience-details-container:hover {
     transform: translateY(-10px);
@@ -655,7 +655,7 @@ section {
     margin-bottom: 2rem;
     margin-top: 2rem;
     margin-left: 1.2rem;
-    -webkit-filter: drop-shadow(2px 1px 10px white);
+    -webkit-filter: drop-shadow(2px 1px 4px white);
 }
 .project-details-container {
     text-align: center;
@@ -795,6 +795,7 @@ section {
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid var(--third-color);
+    -webkit-filter: drop-shadow(2px 1px 4px white);
 }
 .contact-btn:hover {
     cursor: pointer;
