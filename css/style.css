@@ -153,7 +153,7 @@ body.dark-mode {
 .hamburger-menu-links {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: 1rem;
   background-color: var(--header-color);
   width: fit-content;
   max-height: 0;
@@ -175,7 +175,7 @@ body.dark-mode {
 .hamburger-menu-links.open {
   margin-top: 0.7rem;
   max-height: 300px;
-  width: 160px;
+  width: 140px;
   border-radius: 0.5rem;
   box-shadow: -3px -3px 10px #ffffff73,
                 2px 2px 10px rgba(94, 104, 121, 0.288);
