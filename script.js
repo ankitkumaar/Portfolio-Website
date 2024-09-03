@@ -56,11 +56,14 @@ function reloadPage() {
   }, 1000);
 }
 
-/* dark-theme code :
+// dark-theme code :
 document.getElementById('theme-toggle').addEventListener('change', function() {
-document.body.classList.toggle('dark-mode', this.checked);
-}); */
+    document.body.classList.toggle('dark-mode', this.checked);
+});
 
+document.getElementById('theme-toggle-phone').addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode-phone', this.checked);
+});
 
 // Toggle-menu code
 function toggleMenu() {
