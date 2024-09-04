@@ -11,12 +11,19 @@
     font-family: "Poppins", sans-serif;
 }
 :root {
-    --primary-color: white;
-    --secondry-color: black;
+    --primary-color: #ffffff;
+    --secondry-color: #000000;
     --third-color: #5b5b5b;
 
-    --header-color: white;
-    --btn-color: white;
+    --header-bg-color: #ffffff;
+    --toggle-dot-color : #ffffff;
+    --box-shadow-color: #ffffff;
+    --box-bg-color: linear-gradient(145deg, #ffffff, #e6e8ec);
+    --box-border-color: #5b5b5b;
+
+    --btn2-color: linear-gradient(145deg, #ffffff, #e6e8ec);
+    --form-color: transparent;
+    --form-border-color: #0000001a;
 }
 
 body {
@@ -33,14 +40,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--header-color);
+    background: var(--header-bg-color);
     padding: 5px 5%;
     transition: 0.3s;
     box-shadow: -3px -3px 7px var(--third-color),
                   2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 header.shadow {
-    background: linear-gradient(145deg, #ffffff, #e6e8ec);
+    background-color: linear-gradient(145deg, #ffffff, #e6e8ec);
     box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
 }
 .portfolio-logo {
@@ -89,7 +96,7 @@ header.shadow {
   left: 6px;
   width: 20px;
   height: 16px;
-  background-color: white;
+  background-color: var(--toggle-dot-color);
   border-radius: 10rem;
   transition: transform 300ms ease;
 }
@@ -97,12 +104,20 @@ header.shadow {
   transform: translateX(24px);
 }
 body.dark-mode {
-  --primary-color : black;
+  --primary-color : #000000;
   --secondry-color: #e6e7f6;
   --third-color: #e6e7f6;
 
-  --header-color: #222831;
-  --btn-color: NA;
+  --header-bg-color: #222831;
+  --toggle-dot-color: #e6e7f6;
+  --box-shadow-color: NA;
+  --box-bg-color: #313135;
+  --box-border-color: #44444a;
+  
+  --btn2-color: #28282a;
+  --form-color: #313135;
+  --form-border-color: #44444a;
+
   background: #28282a;
 }
 
@@ -154,7 +169,7 @@ body.dark-mode {
   position: absolute;
   top: 100%;
   right: 1rem;
-  background-color: var(--header-color);
+  background-color: var(--header-bg-color);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -205,7 +220,7 @@ body.dark-mode {
   left: 6px;
   width: 16px;
   height: 12px;
-  background-color: white;
+  background-color: var(--toggle-dot-color);
   border-radius: 10rem;
   transition: transform 300ms ease;
 }
@@ -217,8 +232,8 @@ body.dark-mode-phone {
   --secondry-color: #e6e7f6;
   --third-color: #e6e7f6;
 
-  --header-color: #222831;
-  --btn-color: NA;
+  --header-bg-color: #222831;
+  --box-shadow-color: NA;
   background: #28282a;
 }
 
@@ -345,17 +360,17 @@ section {
     padding: 16px;
     margin-right: 20px;
     border-radius: 15px;
-    background: linear-gradient(145deg, #ffffff, #e6e8ec);
-    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--btn-color);
+    color: var(--secondry-color);
+    background-color: var(--box-bg-color);
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--box-shadow-color);
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--third-color);
-    -webkit-filter: drop-shadow(2px 1px 4px white);
+    border: 1px solid var(--box-border-color);
 }
 .home-btn:hover {
     cursor: pointer;
     transform: translateY(-10px);
-    box-shadow: 20px 20px 30px #babecc, -4px -4px 30px var(--btn-color);
+    box-shadow: 20px 20px 30px #babecc, -4px -4px 30px var(--box-shadow-color);
 }
 .home-social-container {
     justify-content: center;
@@ -376,7 +391,7 @@ section {
     display: flex;
     height: 400px;
     width: 400px;
-    -webkit-filter: drop-shadow(2px 1px 2px white);
+    -webkit-filter: drop-shadow(1px 1px 1px white);
 }
 .home-profile {
     margin-top: 8rem;
@@ -420,7 +435,6 @@ section {
     border-radius: 2rem;
     transform: scale(1.2);
     transition: all 300ms ease;
-    -webkit-filter: drop-shadow(2px 1px 2px white);
 }
 .about-profile:hover {
     cursor: pointer;
@@ -444,19 +458,19 @@ section {
 }
 .about-details-container {
     text-align: center;
-    background: linear-gradient(145deg, #ffffff, #e6e8ec);
+    color: var(--secondry-color);
+    background: var(--box-bg-color);
     padding: 30px;
     margin-right: 20px;
     border-radius: 15px;
-    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--btn-color);
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--box-shadow-color);
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--third-color);
-    -webkit-filter: drop-shadow(2px 1px 4px white);
+    border: 1px solid var(--box-border-color);
 }
 .about-details-container:hover {
     transform: translateY(-10px);
-    box-shadow: 20px 20px 30px #babecc, -20px -20px 30px var(--btn-color);
+    box-shadow: 20px 20px 30px #babecc, -20px -20px 30px var(--box-shadow-color);
 }
 .about-icon {
     cursor: pointer;
@@ -495,7 +509,6 @@ section {
 }
 .skill-profile-pic-phone {
     display: none;
-    -webkit-filter: drop-shadow(2px 1px 2px white);
 }
 .skills-section-container {
     display: flex;
@@ -515,19 +528,19 @@ section {
 }
 .skill-category {
     text-align: center;
-    background: linear-gradient(145deg, #ffffff, #e6e8ec);
+    color: var(--secondry-color);
+    background-color: var(--box-bg-color);
     padding: 30px;
     margin-right: 30px;
     border-radius: 15px;
-    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--btn-color);
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--box-shadow-color);
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--third-color);
-    -webkit-filter: drop-shadow(2px 1px 4px white);
+    border: 1px solid var(--box-border-color);
 }
 .skill-category:hover {
     transform: translateY(-10px);
-    box-shadow: 20px 20px 30px #babecc, -20px -20px 30px var(--btn-color);
+    box-shadow: 20px 20px 30px #babecc, -20px -20px 30px var(--box-shadow-color);
 }
 .skill-category ul {
     list-style-type: none;
@@ -539,7 +552,6 @@ section {
     width: 400px;
     margin: auto 0;
     margin-bottom: 10rem;
-    -webkit-filter: drop-shadow(2px 1px 2px white);
 }
 .skill-profile {
     border-radius: 2rem;
@@ -582,7 +594,6 @@ section {
     border-radius: 2rem;
     transform: scale(1.2);
     transition: all 300ms ease;
-    -webkit-filter: drop-shadow(2px 1px 2px white);
 }
 .experience-profile:hover {
     cursor: pointer;
@@ -606,19 +617,19 @@ section {
 }
 .experience-details-container {
     text-align: center;
-    background: linear-gradient(145deg, #ffffff, #e6e8ec);
+    color: var(--secondry-color);
+    background-color: var(--box-bg-color);
     padding: 30px;
     margin-right: 20px;
     border-radius: 15px;
-    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--btn-color);
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--box-shadow-color);
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--third-color);
-    -webkit-filter: drop-shadow(2px 1px 4px white);
+    border: 1px solid var(--box-border-color);
 }
 .experience-details-container:hover {
     transform: translateY(-10px);
-    box-shadow: 20px 20px 30px #babecc, -20px -20px 30px var(--btn-color);
+    box-shadow: 20px 20px 30px #babecc, -20px -20px 30px var(--box-shadow-color);
 }
 .experience-icon {
     cursor: pointer;
@@ -648,7 +659,6 @@ section {
 }
 .project-profile-pic-phone {
     display: none;
-    -webkit-filter: drop-shadow(2px 1px 2px white);
 }
 .project-section-container {
     display: flex;
@@ -656,7 +666,6 @@ section {
     margin-bottom: 2rem;
     margin-top: 2rem;
     margin-left: 1.2rem;
-    -webkit-filter: drop-shadow(2px 1px 4px white);
 }
 .project-details-container {
     text-align: center;
@@ -665,11 +674,12 @@ section {
     padding: 16px;
     margin-right: 20px;
     border-radius: 15px;
-    background: linear-gradient(145deg, #ffffff, #e6e8ec);
-    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--btn-color);
+    color: var(--secondry-color);
+    background-color: var(--box-bg-color);
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--box-shadow-color);
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--third-color);
+    border: 1px solid var(--box-border-color);
 }
 .project-profile-pic {
     display: flex;
@@ -706,16 +716,17 @@ section {
     padding: 16px;
     margin-right: 20px;
     border-radius: 15px;
-    background: linear-gradient(145deg, #ffffff, #e6e8ec);
-    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+    color: var(--secondry-color);
+    background-color: var(--btn2-color);
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--box-shadow-color);
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--third-color);
+    border: 1px solid var(--box-border-color);
 }
 .project-btn-container .btn:hover {
     cursor: pointer;
     transform: translateY(-10px);
-    box-shadow: 20px 20px 30px #babecc, -4px -4px 30px #ffffff;
+    box-shadow: 20px 20px 30px #babecc, -4px -4px 30px var(--box-shadow-color);
 }
 
 /* conatact section */
@@ -749,7 +760,6 @@ section {
     border-radius: 2rem;
     transform: scale(1.2);
     transition: all 300ms ease;
-    -webkit-filter: drop-shadow(2px 1px 2px white);
 }
 .contact-profile:hover {
     cursor: pointer;
@@ -761,9 +771,10 @@ section {
     flex-direction: column;
 }
 .form-control {
-    background: transparent;
+    color: var(--secondry-color);
+    background: var(--form-color);
     border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 1.5px solid var(--form-border-color);
     box-shadow: none;
     font-weight: bold;
     margin: 16px 8px;
@@ -791,17 +802,17 @@ section {
     padding: 16px;
     width: 12rem;
     border-radius: 15px;
-    background: linear-gradient(145deg, #ffffff, #e6e8ec);
-    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--btn-color);
+    color: var(--secondry-color);
+    background-color: var(--box-bg-color);
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px var(--box-shadow-color);
     flex: 1 1 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--third-color);
-    -webkit-filter: drop-shadow(2px 1px 4px white);
+    border: 1px solid var(--box-border-color);
 }
 .contact-btn:hover {
     cursor: pointer;
     transform: translateY(-10px);
-    box-shadow: 20px 20px 30px #babecc, -4px -4px 30px var(--btn-color);
+    box-shadow: 20px 20px 30px #babecc, -4px -4px 30px var(--box-shadow-color);
 }   
 
 /* footer section */
