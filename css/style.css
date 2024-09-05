@@ -459,7 +459,7 @@ section {
 .about-details-container {
     text-align: center;
     color: var(--secondry-color);
-    background: var(--box-bg-color);
+    background-color: var(--box-bg-color);
     padding: 30px;
     margin-right: 20px;
     border-radius: 15px;
