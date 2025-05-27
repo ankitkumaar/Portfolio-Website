@@ -701,7 +701,7 @@ section {
     transform: scale(1.39);
 }
 .project-sub-title {
-    color: rgb(85, 85, 85);
+    color: var(--third-color);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 1rem;
